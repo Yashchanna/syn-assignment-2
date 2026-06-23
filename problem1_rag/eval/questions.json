@@ -1,0 +1,27 @@
+[
+    {
+        "question": "Which specific vector stores are suggested to choose from for the RAG application?",
+        "expected_answer": "pgvector, Qdrant, ChromaDB, LanceDB, FAISS, sqlite-vec",
+        "relevant_document_source": "Gen AI_assignment.pdf"
+    },
+    {
+        "question": "What metrics should be used to evaluate the retrieval layer?",
+        "expected_answer": "Recall@k, Hit Rate, MRR, nDCG@k, context precision",
+        "relevant_document_source": "Gen AI_assignment.pdf"
+    },
+    {
+        "question": "How is position bias mitigated in the LLM-as-judge pipeline?",
+        "expected_answer": "Run each pair in BOTH orders; average or require agreement; report the flip rate.",
+        "relevant_document_source": "Gen AI_assignment.pdf"
+    },
+    {
+        "question": "What is the core objective of Problem 2?",
+        "expected_answer": "Use an LLM judge to produce a structured quality verdict, with concrete measures to detect and reduce judge bias.",
+        "relevant_document_source": "Gen AI_assignment.pdf"
+    },
+    {
+        "question": "Who was the first president of the United States?",
+        "expected_answer": "I cannot answer this based on the provided context.",
+        "relevant_document_source": "Gen AI_assignment.pdf"
+    }
+]

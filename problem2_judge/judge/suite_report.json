@@ -1,0 +1,11 @@
+{
+    "total_cases": 1,
+    "model_a_win_rate": 1.0,
+    "model_b_win_rate": 0.0,
+    "tie_rate": 0.0,
+    "position_bias_flip_rate": 0.0,
+    "tokens": {
+        "prompt_tokens": 640,
+        "completion_tokens": 412
+    }
+}

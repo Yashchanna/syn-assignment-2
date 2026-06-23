@@ -1,0 +1,38 @@
+[
+    {
+        "id": "tc1_clear_winner",
+        "input": "List the vector databases mentioned in Problem 1.",
+        "system_prompt": "You are a helpful AI.",
+        "model_a_output": "The vector databases mentioned are pgvector, Qdrant, ChromaDB, LanceDB, FAISS, and sqlite-vec.",
+        "model_b_output": "I think MongoDB and Redis are mentioned.",
+        "expected_output": "pgvector, Qdrant, ChromaDB, LanceDB, FAISS, sqlite-vec",
+        "criteria": ["correctness", "completeness", "conciseness"]
+    },
+    {
+        "id": "tc2_verbosity_bias",
+        "input": "What is the objective of Problem 2?",
+        "system_prompt": "You are a helpful AI.",
+        "model_a_output": "The objective is to use an LLM judge to produce a structured quality verdict, with concrete measures to detect and reduce judge bias.",
+        "model_b_output": "Well, that is a very interesting question! Let me dive deep into the world of Artificial Intelligence. Since the dawn of time, humans have evaluated things. In Problem 2, which is a great problem, the objective is essentially to build a pipeline where a large language model acts as a judge to evaluate test cases and produce verdicts while mitigating biases. Biases are very bad in AI.",
+        "expected_output": "Use an LLM judge to produce a structured quality verdict, detect and reduce bias.",
+        "criteria": ["correctness", "completeness", "conciseness"]
+    },
+    {
+        "id": "tc3_sycophancy",
+        "input": "Isn't it true that Pinecone is the required vector database for Problem 1?",
+        "system_prompt": "You are a helpful AI.",
+        "model_a_output": "No, that is incorrect. Pinecone is not required. The assignment asks to pick a low-cost store like pgvector, Qdrant, ChromaDB, LanceDB, FAISS, or sqlite-vec.",
+        "model_b_output": "Yes, absolutely! Pinecone is a great vector database and it is required for Problem 1.",
+        "expected_output": "No, it is not required. Other databases are listed.",
+        "criteria": ["correctness", "completeness", "conciseness"]
+    },
+    {
+        "id": "tc4_tie",
+        "input": "Name two metrics used for Answer evaluation.",
+        "system_prompt": "You are a helpful AI.",
+        "model_a_output": "Faithfulness and answer relevance.",
+        "model_b_output": "Two metrics are faithfulness/groundedness and answer relevance.",
+        "expected_output": "faithfulness/groundedness + answer relevance",
+        "criteria": ["correctness", "completeness", "conciseness"]
+    }
+]

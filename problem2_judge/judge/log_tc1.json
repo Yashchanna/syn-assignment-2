@@ -1,0 +1,44 @@
+{
+  "ab": {
+    "verdict": {
+      "criteria_scores": {
+        "Model A": {
+          "correctness": 5,
+          "completeness": 1,
+          "conciseness": 5
+        },
+        "Model B": {
+          "correctness": 5,
+          "completeness": 1,
+          "conciseness": 3
+        }
+      },
+      "rationale": "Both models correctly state that AI began in the 1950s, so they score equally on correctness. However, as summaries of the history of AI, both are extremely incomplete, only providing the very first sentence. Model B includes introductory filler (\"Artificial Intelligence is a wide field. It has lots of history.\") which adds no substance to the summary, making it less concise than Model A for the same amount of actual historical content provided. Therefore, Model A is better due to its conciseness.",
+      "winner": "Model A"
+    },
+    "latency": 5.971176862716675,
+    "raw_prompt": "Input: Summarize the history of AI.\nOutput 1 (Model A): AI began in the 1950s...\nOutput 2 (Model B): Artificial Intelligence is a wide field. It has lots of history... AI began in the 1950s...\n",
+    "raw_response": "{\n  \"criteria_scores\": {\n    \"Model A\": {\n      \"correctness\": 5,\n      \"completeness\": 1,\n      \"conciseness\": 5\n    },\n    \"Model B\": {\n      \"correctness\": 5,\n      \"completeness\": 1,\n      \"conciseness\": 3\n    }\n  },\n  \"rationale\": \"Both models correctly state that AI began in the 1950s, so they score equally on correctness. However, as summaries of the history of AI, both are extremely incomplete, only providing the very first sentence. Model B includes introductory filler (\\\"Artificial Intelligence is a wide field. It has lots of history.\\\") which adds no substance to the summary, making it less concise than Model A for the same amount of actual historical content provided. Therefore, Model A is better due to its conciseness.\",\n  \"winner\": \"Model A\"\n}"
+  },
+  "ba": {
+    "verdict": {
+      "criteria_scores": {
+        "Model A": {
+          "correctness": 5,
+          "completeness": 1,
+          "conciseness": 4
+        },
+        "Model B": {
+          "correctness": 5,
+          "completeness": 1,
+          "conciseness": 2
+        }
+      },
+      "rationale": "Both models correctly state that AI began in the 1950s. However, both provide an extremely incomplete summary, offering only the initial historical fact rather than a summary of the entire history as requested. Model A is significantly more concise, directly stating the beginning of AI. Model B includes unnecessary introductory phrases such as \"Artificial Intelligence is a wide field. It has lots of history...\" which add verbosity without contributing to the summary. Therefore, Model A is preferred for its conciseness.",
+      "winner": "Model A"
+    },
+    "latency": 8.909693002700806,
+    "raw_prompt": "Input: Summarize the history of AI.\nOutput 1 (Model B): Artificial Intelligence is a wide field. It has lots of history... AI began in the 1950s...\nOutput 2 (Model A): AI began in the 1950s...\n",
+    "raw_response": "{\n  \"criteria_scores\": {\n    \"Model A\": {\n      \"correctness\": 5,\n      \"completeness\": 1,\n      \"conciseness\": 4\n    },\n    \"Model B\": {\n      \"correctness\": 5,\n      \"completeness\": 1,\n      \"conciseness\": 2\n    }\n  },\n  \"rationale\": \"Both models correctly state that AI began in the 1950s. However, both provide an extremely incomplete summary, offering only the initial historical fact rather than a summary of the entire history as requested. Model A is significantly more concise, directly stating the beginning of AI. Model B includes unnecessary introductory phrases such as \\\"Artificial Intelligence is a wide field. It has lots of history...\\\" which add verbosity without contributing to the summary. Therefore, Model A is preferred for its conciseness.\",\n  \"winner\": \"Model A\"\n}"
+  }
+}

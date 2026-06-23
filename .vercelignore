@@ -1,0 +1,6 @@
+venv/
+problem1_rag/
+problem2_judge/
+.env
+__pycache__/
+.vscode/

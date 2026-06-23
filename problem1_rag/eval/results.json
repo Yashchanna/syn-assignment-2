@@ -1,0 +1,26 @@
+{
+    "metrics": {
+        "average_latency_ms": 3897.4145889282227,
+        "hit_rate": 0.6
+    },
+    "details": [
+        {
+            "question": "Which specific vector stores are suggested to choose from for the RAG application?",
+            "latency_ms": 10672.734260559082,
+            "hit": 1,
+            "answer": "The specific vector stores suggested for the RAG application are pgvector, Qdrant (self-hosted/embedded), ChromaDB, LanceDB, FAISS, and sqlite-vec [Document 1]."
+        },
+        {
+            "question": "What metrics should be used to evaluate the retrieval layer?",
+            "latency_ms": 6512.199878692627,
+            "hit": 1,
+            "answer": "To evaluate the retrieval layer, the following metrics should be used: Recall@k / Hit Rate, MRR, nDCG@k, and context precision [Document 1]."
+        },
+        {
+            "question": "How is position bias mitigated in the LLM-as-judge pipeline?",
+            "latency_ms": 2302.1388053894043,
+            "hit": 1,
+            "answer": "Position bias in the LLM-as-judge pipeline is mitigated by running each pair of outputs in both A/B and B/A orders. The results are then averaged, or agreement is required, and the flip rate is reported [Document 1]."
+        }
+    ]
+}

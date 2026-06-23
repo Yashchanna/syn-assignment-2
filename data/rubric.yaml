@@ -1,0 +1,14 @@
+criteria:
+  correctness:
+    description: "Does the output provide factually correct information?"
+    scale: "1-5, where 1 is completely wrong and 5 is perfectly accurate."
+  completeness:
+    description: "Does the output cover all necessary aspects of the prompt?"
+    scale: "1-5, where 1 misses major points and 5 covers everything."
+  conciseness:
+    description: "Is the output terse and to the point without unnecessary padding?"
+    scale: "1-5, where 1 is overly verbose and unsupported, and 5 is perfectly concise."
+instructions:
+  - "Provide a structured JSON verdict with a per-criterion score, rationale, and an overall winner (A, B, or Tie)."
+  - "Penalize unsupported length (verbosity bias)."
+  - "Ground your rationale in the text of the outputs."

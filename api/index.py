@@ -434,7 +434,9 @@ async def api_query(req: RAGQueryRequest):
         )
     try:
         chunks = retrieve_chunks(req.query, k=req.k)
-        answer, tokens = generate_answer(req.query, chunks)
+        gen_res = generate_answer(req.query, chunks)
+        answer = gen_res["answer"]
+        tokens = {"prompt_tokens": gen_res["prompt_tokens"], "completion_tokens": gen_res["completion_tokens"]}
         latency = (time.time() - start) * 1000
         citations = [{"source": c.metadata.get("source", "Unknown")} for c in chunks]
         return RAGQueryResponse(

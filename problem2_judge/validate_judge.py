@@ -5,8 +5,8 @@ from judge.pipeline import LLMJudgePipeline
 
 def test_retest_consistency():
     pipeline = LLMJudgePipeline()
-    rubric_path = os.path.join(os.path.dirname(__file__), 'judge/rubric.yaml')
-    suite_path = os.path.join(os.path.dirname(__file__), 'tests/suite.json')
+    rubric_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data/rubric.yaml')
+    suite_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data/suite.json')
     
     print("Running Suite Pass 1...")
     report1 = pipeline.run_suite(suite_path, rubric_path)

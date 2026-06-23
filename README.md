@@ -1,7 +1,3 @@
-# Take-Home Assignment: Applied AI / ML Engineering
-
-This repository contains the complete implementation for the "Applied AI / ML Engineering" take-home assignment. It successfully integrates two distinct AI engineering challenges into a **unified FastAPI web application** with a beautifully designed, tabbed dashboard frontend.
-
 ### Live Demo (UI Preview Only)
 🌐 **[View the Frontend on Vercel](https://syn-assignment-2.vercel.app/)**
 *(Note: Due to Vercel's 500MB free-tier serverless limit, the heavy local ML libraries like PyTorch and ChromaDB were excluded from the deployment. The live Vercel link hosts the UI, but querying the API will safely return a mock response explaining the limitation. To experience the actual RAG pipeline and LLM Judge evaluation, please run the application locally!)*
